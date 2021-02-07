@@ -10,7 +10,6 @@ with open('./datas/calc.yaml') as f:
     data=calc_datas['datas']
     myid=calc_datas['myids']
 
-@pytest.mark.usefixtures()
 class TestCals:
     def setup_class(self):
         self.calc = Calculator()
